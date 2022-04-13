@@ -5,6 +5,8 @@ const INCREMENT = "INCREMENT";
 const DECREMENT = "DECREMENT";
 const RESET = "RESET";
 
+// Reducer Function
+
 const countReducer = (count, action) => {
   switch (action.type) {
     case INCREMENT: {
