@@ -20,6 +20,9 @@ function Counter() {
   // componentDidMount
   useEffect(() => {
     console.log("UseEffect 1");
+    return () => {
+      console.log("useEffecet 4"); //<<<component Will unmount
+    };
   }, []); //[]=>Dependency Array
 
   // componentDidUpdate
